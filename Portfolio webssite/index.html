@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fas fa-bars" onclick="openmenu()"></i> <!-- Menu Icon -->
+          <ul id="sidemenu">
+            <i class="fas fa-times" onclick="closemenu()"></i> <!-- Close Icon -->
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi,<br />
+            I'm <span>Srishti</span>
+          </h1>
+          <p>
+            Passionate Undergraduate in Computer Science & Engineering <br />
+            Crafting Innovative Solutions & Experiences.
+          </p>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/WhatsApp Image 2025-02-12 at 19.10.02_20e7efc6.jpg"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I am a passionate and driven Computer Science student with a strong interest in software development, machine learning, and cloud computing. I enjoy solving complex problems and building innovative solutions that make a difference.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Achievements')">
+                Achievements
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />Java, Python, C++,
+                  JavaScript
+                </li>
+                <li>
+                  <span>Developer Tools</span><br />Git/GitHub, VSCode, MySQL,
+                  AWS, Node.js, Bootstrap, Tailwind
+                </li>
+                <li>
+                  <span>Technical Skills</span><br />Generative AI, Machine
+                  Learning, Cloud Computing, Operating System, DSA
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>Chandigarh University (2022-2026)</span><br />Bachelor's
+                  of Engineering in Computer Science and Engineering
+                </li>
+                <li>
+                  <span>Intermediate (CBSE) 2021</span><br />Percentage: 88.8%
+                </li>
+                <li>
+                  <span>Matriculation (CBSE)</span><br />Percentage: 83.4%
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Achievements">
+              <ul>
+                <li>
+                  <span>General Secretary (ISTE-CUSC)</span><br />Organized
+                  Technical Events
+                </li>
+                <li><span>Winner</span><br />Bug-Battle Competition</li>
+                <li>
+                  <span>Technical Skills</span><br />Generative AI, Machine
+                  Learning, Cloud Computing, Operating System, DSA
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="projects-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Project 1</h2>
+            <p>
+              A web-based application for real-time collaboration using WebSockets and Node.js.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Project 2</h2>
+            <p>
+              A machine learning model to predict stock prices using Python and TensorFlow.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-app-store-ios"></i>
+            <h2>Project 3</h2>
+            <p>
+              A mobile app for task management built with React Native and Firebase.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="subtitle">My Certifications</h1>
+        <div class="certifications-list">
+          <div class="certification-card">
+            <img
+              src="images/work-1.png"
+              alt="Certification 1"
+              class="certification-img"
+            />
+            <div class="certification-content">
+              <h2>Certification 1</h2>
+              <p>
+                AWS Certified Solutions Architect - Associate.
+              </p>
+              <a href="#">View Certificate</a>
+            </div>
+          </div>
+          <div class="certification-card">
+            <img
+              src="images/work-2.png"
+              alt="Certification 2"
+              class="certification-img"
+            />
+            <div class="certification-content">
+              <h2>Certification 2</h2>
+              <p>
+                Google Cloud Professional Data Engineer.
+              </p>
+              <a href="#">View Certificate</a>
+            </div>
+          </div>
+          <div class="certification-card">
+            <img
+              src="images/work-3.png"
+              alt="Certification 3"
+              class="certification-img"
+            />
+            <div class="certification-content">
+              <h2>Certification 3</h2>
+              <p>
+                Microsoft Certified: Azure AI Engineer Associate.
+              </p>
+              <a href="#">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>srishtinautiyal27@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9897702245</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/srishhtii.27/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/srishti-nautiyal-b30920244/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://leetcode.com/u/srishti273/"><i class="fa-solid fa-terminal"></i></a>
+              <a href="https://github.com/srishti27s"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Enter your Name" required>
+              <input type="email" name="email" placeholder="Enter Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Leave Your Message here"></textarea>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p> Copyright &copy; Srishti. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Function to open the side menu
+      function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+      }
+
+      // Function to close the side menu
+      function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+      }
+
+      // Tab functionality
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwS0CzQuD9zFT_vBjrH9CPjwIJ_Y9qYmgZ0NB-VR_5kVr6nTvNS0JDWU4M1xvhKAZed/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
